@@ -65,6 +65,7 @@ def draw_letters(letters, turtles):
   for i in range(len(turtles)):
     drawer = trtl.Turtle()
     drawer.penup()
+    drawer.hideturtle()
     turtle = turtles[i]
     drawer.goto(turtle.xcor()-18, turtle.ycor()-35)
     drawer.write(letters[i], font = ("Arial", 40, "bold"))
